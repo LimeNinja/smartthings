@@ -17,13 +17,18 @@ I’d be interested to hear if anyone else decides to go with the battery option
 
 ##Components
 The basic components required are:
+
 1 x WeMos D1 Mini				£2.66		http://tinyurl.com/gnl4dsk
+
 1 x DHT22 Temperature Sensor		£1.80		http://tinyurl.com/zopxohh
+
 
 And that’s it… simple eh?
 
 You’ll also need a micro usb cable for power, a breadboard, wire etc but that’s all fairly standard.
+
 I’ve included below the enclosure i’ve used but this is probably more down to personal taste.
+
 
 1 x Enclosure					£0.71		http://tinyurl.com/h7tpf3t
 
@@ -33,9 +38,13 @@ Wiring the module is fairly simple.
 ![alt tag](http://i0.wp.com/beerandchips.azurewebsites.net/wp-content/uploads/2015/12/dht22-pinout.jpg)
 
 Plug your EP8266 development board into a breadboard
+
 Similarly, plug your DHT22 temperature sensor into the breadboard
+
 Connect pin 1 on the DHT22 to the 3.3v output of the ESP8266
+
 Connect pin 2 on the DHT2 to D4 on the ESP8266
+
 Connect pin 4 on the DHT22 to GND on the ESP8266
 
 ##Code
@@ -62,10 +71,14 @@ The easiest way to get these is to email them to yourself. Again, save these ID'
 
 ###Arduino
 To program the chip, use the temperature-humidity-sensor.ini
+
 There are a couple of configuration changes you will need to make:
 
+
 1. First, make sure the correct 'host' is defined. I'm in the UK, so our API host address is "graph-eu01-euwest1.api.smartthings.com"
+
 2. Edit the sensorID, appID and accessToken from the data you gathered earlier. This identifies the device and smartapp in Smartthings that the sensor will communicate with.
+
 3. Change the ssid and password to match your home wifi network so the module can connect.
 
 You're good to go. Upload the code and your sensor will post it's readings directly to Smartthings!
