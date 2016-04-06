@@ -28,7 +28,15 @@ I’ve included below the enclosure i’ve used but this is probably more down t
 1 x Enclosure					£0.71		http://tinyurl.com/h7tpf3t
 
 ##Wiring
-Wiring the module is fairly simple. Connect the DHT22 VCC to the boards 3.3v pin, Gnd to Gnd and data to pin D2
+Wiring the module is fairly simple. 
+
+![alt tag](http://i0.wp.com/beerandchips.azurewebsites.net/wp-content/uploads/2015/12/dht22-pinout.jpg)
+
+Plug your EP8266 development board into a breadboard
+Similarly, plug your DHT22 temperature sensor into the breadboard
+Connect pin 1 on the DHT22 to the 3.3v output of the ESP8266
+Connect pin 2 on the DHT2 to D4 on the ESP8266
+Connect pin 4 on the DHT22 to GND on the ESP8266
 
 ##Code
 There are a couple of prerequisites needed in order to use the sensor in smartthings.
